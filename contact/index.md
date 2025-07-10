@@ -15,8 +15,8 @@ group: contact
   [MSB 207, Mechanical Sciences Block](https://maps.app.goo.gl/mkdmWRWuQ8bZVXap9)<br>
   Indian Institute of Technology Madras <br>
   India <br>
-  Phone:  +91 44 2257 5067 <br>
-  Mail: iitmbrainlab@gmail.com
+  📞 +91 44 2257 5067 <br>
+  ✉️ iitmbrainlab@gmail.com
   
 </div>
 
