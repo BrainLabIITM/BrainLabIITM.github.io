@@ -3,7 +3,7 @@ title: "Support for mechanical advantage hypothesis of grasping cannot be explai
 authors: "Rajakumar B, Dutta S, S.K.M Varadhan"
 journal: "Scientific Reports"
 pub_date: "2022"
-image: "/static/img/pub/rajakumar_2022_mech_advantage.png"
+image: "/static/img/pub/rajakumar_2022b.png"
 links:
 - name: "Nature (Scientific Reports)"
   url: "https://www.nature.com/articles/s41598-022-14014-2"
