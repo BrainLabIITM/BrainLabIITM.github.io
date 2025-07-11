@@ -6,5 +6,5 @@ pub_date: "2022"
 image: "/static/img/pub/rajakumar_2022.png"
 links:
 - name: "Nature (Scientific Reports)"
-  URL: "https://www.nature.com/articles/s41598-022-25351-7"
+  url: "https://www.nature.com/articles/s41598-022-25351-7"
 ---

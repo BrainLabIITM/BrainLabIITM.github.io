@@ -6,7 +6,7 @@ pub_date: "2023"
 image: "/static/img/pub/shenoy_23.png"
 links:
 - name: "Nature (Scientific Reports)"
-  URL: "https://www.nature.com/articles/s41598-023-47620-9"
+  url: "https://www.nature.com/articles/s41598-023-47620-9"
 ---
 
 

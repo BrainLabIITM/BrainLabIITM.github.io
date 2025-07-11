@@ -6,5 +6,5 @@ pub_date: "2022"
 image: "/static/img/pub/subhash_2022.png"
 links:
 - name: "Frontiers in Physiology"
-  URL: "https://www.frontiersin.org/articles/10.3389/fphys.2022.1023589/full"
+  url: "https://www.frontiersin.org/articles/10.3389/fphys.2022.1023589/full"
 ---

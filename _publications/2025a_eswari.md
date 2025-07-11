@@ -6,7 +6,7 @@ pub_date: "2025"
 image: "/static/img/pub/eas_2025a.png"
 links:
 - name: "Nature (Scientific Reports)"
-  URL: "https://www.nature.com/articles/s41598-025-99941-6"
+  url: "https://www.nature.com/articles/s41598-025-99941-6"
 ---
 
 

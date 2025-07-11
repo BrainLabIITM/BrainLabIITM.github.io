@@ -6,7 +6,7 @@ pub_date: "2022"
 image: "/static/img/pub/shenoy_22.png"
 links:
 - name: "IEEE Access"
-  URL: "https://ieeexplore.ieee.org/document/9870778"
+  url: "https://ieeexplore.ieee.org/document/9870778"
 ---
 
 

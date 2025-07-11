@@ -6,5 +6,5 @@ pub_date: "2024"
 image: "/static/img/pub/yuvaraj_2024.png"
 links:
 - name: "F1000Research"
-  URL: "https://f1000research.com/articles/12-429/v4"
+  url: "https://f1000research.com/articles/12-429/v4"
 ---

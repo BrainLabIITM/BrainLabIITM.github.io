@@ -5,7 +5,7 @@ journal: "IEEE Transactions on Haptics"
 image: "/static/img/pub/agarwal_23.png"
 links:
 - name: "IEEE Xplore"
-  URL: "https://ieeexplore.ieee.org/document/10052736"
+  url: "https://ieeexplore.ieee.org/document/10052736"
 ---
 
 

@@ -6,7 +6,7 @@ pub_date: "2025"
 image: "/static/img/pub/jacob_2025.png"
 links:
 - name: "Nature (Scientific Reports)"
-  URL: "https://www.nature.com/articles/s41598-025-99250-y"
+  url: "https://www.nature.com/articles/s41598-025-99250-y"
 ---
 
 

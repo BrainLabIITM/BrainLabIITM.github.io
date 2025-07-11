@@ -6,7 +6,7 @@ pub_date: "2022"
 image: "/static/img/pub/agarwal_22.png"
 links:
 - name: "Frontiers in Human Neuroscience"
-  URL: "https://www.frontiersin.org/articles/10.3389/fnhum.2022.968669/abstract"
+  url: "https://www.frontiersin.org/articles/10.3389/fnhum.2022.968669/abstract"
 ---
 
 

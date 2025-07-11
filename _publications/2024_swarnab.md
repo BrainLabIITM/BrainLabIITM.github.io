@@ -6,7 +6,7 @@ pub_date: "2024"
 image: "/static/img/pub/dutta_24.jpg"
 links:
 - name: "ScienceDirect (Neuropsychologia)"
-  URL: "https://www.sciencedirect.com/science/article/pii/S0028393224002112"
+  url: "https://www.sciencedirect.com/science/article/pii/S0028393224002112"
 ---
 
 

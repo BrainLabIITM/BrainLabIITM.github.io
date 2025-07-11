@@ -6,7 +6,7 @@ pub_date: "2024"
 image: "/static/img/pub/eas_2024.png"
 links:
 - name: "IEEE Xplore"
-  URL: "https://ieeexplore.ieee.org/document/10669794"
+  url: "https://ieeexplore.ieee.org/document/10669794"
 ---
 
 
