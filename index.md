@@ -25,7 +25,7 @@ Note: We were previously called Neuromechanics Lab and some of our student feedb
 </p>
 
 <p style="text-align: center; margin-top: 2rem;">
-  <img src="static/img/logo/brain_lab_research.png" alt="IITM BRAIN Lab lab logo" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 12px rgba(0,0,0,0.1);">
+  <img src="static/img/logo/brain_lab_research_content_img.jpeg" alt="IITM BRAIN Lab lab logo" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 12px rgba(0,0,0,0.1);">
 </p>
 
 <p style="margin-top: 2rem;">
