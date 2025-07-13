@@ -6,8 +6,7 @@ group: contact
 
 # Contact the BRAIN Lab IITM
 
-
-<div class="row">
+---
 
 <div class="col-md-4">
 
