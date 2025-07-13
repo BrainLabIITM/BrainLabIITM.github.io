@@ -4,9 +4,11 @@ layout: default
 group: research
 ---
 
-<div class="row">
 
 # Our Research
+
+<hr style="border-top: 2px solid #ccc; margin-bottom: 2rem;" />
+
 
 <p style="text-align:center;">
   <img src="img/hand_expt.png" alt="Hand expt logo" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
@@ -116,4 +118,4 @@ Our approach leverages our extensive experience in human experimentation—inclu
   <li><b>For clinical work (with patients):</b> 2 high-quality publications (JCR Q1/Q2) – at least one accepted. Clinical work takes longer and can lead to higher-impact results.</li>
 </ul>
 
-</div>
+
