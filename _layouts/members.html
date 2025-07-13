@@ -1,18 +1,128 @@
 {% include header.html %}
-<div class="container">
-   <img class="img-fluid" src="/static/img/members/lab/lab_room.jpeg" title="Our lab" alt="Our lab" style="width: 10%;" height="10%">
-   <div class="row">
-       <div class="col-sm-9">
-           <br>
-           {{ content }}
-    </div>
-    <div class="col-sm-3 smalltxt">
-        <br>
-        {% capture sidebar %}{% include alumni_sidebar.md %}{% endcapture %}
-        {{ sidebar | markdownify }}
-    </div>
-</div>
-<br>
 
+<style>
+  .members-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .member-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: transform 0.2s;
+  }
+
+  .member-card:hover {
+    transform: scale(1.01);
+  }
+
+  .member-img {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .member-img img {
+    max-width: 160px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+
+  .member-details {
+    padding: 1.5rem;
+    flex: 1;
+  }
+
+  .member-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #1e3a8a;
+  }
+
+  .member-role {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0.8rem;
+  }
+
+  .member-bio {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .member-links a {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    color: #0077cc;
+    text-decoration: none;
+  }
+
+  .member-links a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .member-card {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .member-img {
+      padding: 1rem 0;
+    }
+
+    .member-img img {
+      width: 70%;
+      height: auto;
+      border: none;
+    }
+
+    .member-links a {
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+  }
+</style>
+
+<h1 class="page-title">{{ page.title }}</h1>
+<hr class="divider">
+
+<div class="container">
+  
+
+  <div class="members-container">
+    {% for person in page.members %}
+    <div class="member-card">
+      <div class="member-img">
+        <img src="{{ person.image }}" alt="{{ person.name }}">
+      </div>
+      <div class="member-details">
+        <h2 class="member-name">{{ person.name }}</h2>
+        <h3 class="member-role">{{ person.role }}</h3>
+        <p class="member-bio">{{ person.bio }}</p>
+        <div class="member-links">
+          {% for link in person.links %}
+          <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
+
 {% include footer.html %}
