@@ -1,0 +1,95 @@
+{% include header.html %}
+
+<style>
+  .facilities-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .facility-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: transform 0.2s;
+  }
+
+  .facility-card:hover {
+    transform: scale(1.01);
+  }
+
+  .facility-img {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .facility-img img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+
+  .facility-details {
+    padding: 1.5rem;
+    flex: 1;
+  }
+
+  .facility-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1e3a8a;
+  }
+
+  .facility-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  @media (max-width: 600px) {
+    .facility-card {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .facility-img {
+      padding: 1rem 0;
+    }
+
+    .facility-img img {
+      width: 70%;
+      height: auto;
+      border: none;
+    }
+  }
+</style>
+
+<h1 class="page-title">{{ page.title }}</h1>
+<hr class="divider">
+
+<div class="facilities-container">
+
+  {% for facility in page.facilities %}
+    <div class="facility-card">
+      <div class="facility-img">
+        <img src="{{ facility.image }}" alt="{{ facility.title }}">
+      </div>
+      <div class="facility-details">
+        <div class="facility-title">{{ facility.title }}</div>
+        <div class="facility-description">{{ facility.description }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% include footer.html %}
