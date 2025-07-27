@@ -1,27 +1,27 @@
-- name: home
+- name: Home
   link: "/"
   group: home
 
-- name: research
+- name: Prospective PhD Students
   link: "/research"
   group: research
 
-- name: publications
+- name: Publications
   link: "/publications"
   group: publications
 
-- name: members
+- name: Members
   link: "/members"
   group: members
 
-- name: facilities
+- name: Facilities
   link: "/facilities"
   group: facilities
 
-- name: teaching
+- name: Teaching
   link: "/courses"
   group: courses
 
-- name: contact
+- name: Contact
   link: "/contact"
   group: contact
