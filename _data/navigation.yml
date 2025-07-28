@@ -2,21 +2,21 @@
   link: "/"
   group: home
 
-- name: Prospective PhD Students
-  link: "/research"
-  group: research
+- name: Members
+  link: "/members"
+  group: members
 
 - name: Publications
   link: "/publications"
   group: publications
 
-- name: Members
-  link: "/members"
-  group: members
-
 - name: Facilities
   link: "/facilities"
   group: facilities
+
+- name: Prospective PhD Students
+  link: "/research"
+  group: research
 
 - name: Teaching
   link: "/courses"
