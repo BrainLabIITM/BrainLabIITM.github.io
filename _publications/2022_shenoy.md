@@ -2,7 +2,7 @@
 title: "Design and Validation of an IMU Based Full Hand Kinematic Measurement System"
 authors: "Shenoy P, Gupta A, and S.K.M Varadhan"
 journal: "IEEE Access"
-pub_date: "2022"
+pub_date: "2022-08-31"
 image: "/static/img/pub/shenoy_22.png"
 links:
 - name: "IEEE Access"

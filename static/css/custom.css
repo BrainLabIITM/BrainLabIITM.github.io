@@ -48,6 +48,77 @@
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+/* Alumni Carousel Styles */
+.testimonials-carousel .carousel-item {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonials-carousel .carousel-item.active {
+    display: block;
+}
+
+.testimonials-carousel .carousel-controls {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.testimonials-carousel .carousel-controls a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.testimonials-carousel .carousel-controls a:hover {
+    background: #052049;
+    color: white;
+    text-decoration: none;
+}
+
+.page-sidebar {
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.testimonials-carousel .quote {
+    font-style: italic;
+    margin-bottom: 1rem;
+    border-left: 3px solid #052049;
+    padding-left: 1rem;
+}
+
+/* Make the feedback text blue */
+.testimonials-carousel .quote p {
+    color: #052049;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.testimonials-carousel .source .name {
+    font-weight: bold;
+    color: #052049;
+}
+
+.testimonials-carousel .source .title {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.testimonials-carousel .title {
+    color: #052049;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
 
 /*
 body {

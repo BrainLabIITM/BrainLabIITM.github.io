@@ -2,7 +2,7 @@
 title: "Motor sequence learning data collected continuously for fifteen days of practice using a novel glove-based typing device"
 authors: "Dhanush Rachaveti and Varadhan SKM"
 journal: "Data in Brief"
-pub_date: "2020"
+pub_date: "2020-04-19"
 image: "/static/img/pub/dhanush_2020.jpg"
 links:
 - name: "ScienceDirect"

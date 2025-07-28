@@ -2,6 +2,7 @@
 title: "How to train your posture: Haptic feedback can be used for postural adaptation of the trunk during upper-limb motor training"
 authors: "Agarwal R, Hussain A, Domenico C., and S.K.M Varadhan"
 journal: "IEEE Transactions on Haptics"
+pub_date: "2023-02-24"
 image: "/static/img/pub/agarwal_23.png"
 links:
 - name: "IEEE Xplore"

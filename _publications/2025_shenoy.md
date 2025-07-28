@@ -2,7 +2,7 @@
 title: "Exploring Synergistic Patterns in Bimanual Distal Limb Movements Through Low Dimensional Representations"
 authors: "Prajwal Shenoy and Varadhan SKM"
 journal: "Scientific Reports"
-pub_date: "2025"
+pub_date: "2025-05-23"
 image: "/static/img/pub/shenoy_25.png"
 links:
 - name: "Nature (Scientific Reports)"

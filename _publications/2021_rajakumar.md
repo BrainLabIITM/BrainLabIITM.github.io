@@ -2,7 +2,7 @@
 title: "Distinct behavior of the little finger during the vertical translation of an unsteady thumb platform while grasping"
 authors: "Rajakumar B, Varadhan S.K.M"
 journal: "Scientific Reports"
-pub_date: "2021"
+pub_date: "2021-10-26"
 image: "/static/img/pub/rajakumar_2021.png"
 links:
 - name: "Nature (Scientific Reports)"
