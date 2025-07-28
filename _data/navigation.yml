@@ -14,13 +14,13 @@
   link: "/facilities"
   group: facilities
 
-- name: Prospective PhD Students
-  link: "/research"
-  group: research
-
 - name: Teaching
   link: "/courses"
   group: courses
+
+- name: Prospective PhD Students
+  link: "/research"
+  group: research
 
 - name: Contact
   link: "/contact"
