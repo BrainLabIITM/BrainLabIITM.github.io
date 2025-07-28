@@ -1,5 +1,4 @@
 {% include header.html %}
-
 <style>
   .members-container {
     max-width: 1000px;
@@ -7,7 +6,6 @@
     padding: 0 1rem;
     font-family: 'Segoe UI', sans-serif;
   }
-
   .member-card {
     display: flex;
     flex-direction: row;
@@ -18,11 +16,9 @@
     margin-bottom: 2rem;
     transition: transform 0.2s;
   }
-
   .member-card:hover {
     transform: scale(1.01);
   }
-
   .member-img {
     flex-shrink: 0;
     display: flex;
@@ -30,70 +26,113 @@
     justify-content: center;
     padding: 1rem;
   }
-
   .member-img img {
     max-width: 160px;
     height: auto;
     border-radius: 8px;
     border: 1px solid #eee;
   }
-
   .member-details {
     padding: 1.5rem;
     flex: 1;
   }
-
   .member-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
     color: #1e3a8a;
   }
-
   .member-role {
     font-size: 1rem;
     font-weight: bold;
     color: #444;
     margin-bottom: 0.8rem;
   }
-
   .member-bio {
     font-size: 0.95rem;
     line-height: 1.6;
     color: #555;
     margin-bottom: 1rem;
   }
-
   .member-links a {
     margin-right: 1rem;
     font-size: 0.9rem;
     color: #0077cc;
     text-decoration: none;
   }
-
   .member-links a:hover {
     text-decoration: underline;
   }
-
+  
+  /* Alumni Table Styles */
+  .alumni-section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  .alumni-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .alumni-table th {
+    background-color: #052049;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .alumni-table td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  .alumni-table tr:hover {
+    background-color: #f9fafb;
+  }
+  .alumni-table tr:last-child td {
+    border-bottom: none;
+  }
+  .alumni-name {
+    font-weight: 600;
+    color: #052049;
+  }
+  .alumni-batch {
+    color: #6b7280;
+    font-style: italic;
+  }
+  .alumni-org {
+    color: #374151;
+  }
+  
   @media (max-width: 600px) {
     .member-card {
       flex-direction: column;
       text-align: center;
     }
-
     .member-img {
       padding: 1rem 0;
     }
-
     .member-img img {
       width: 70%;
       height: auto;
       border: none;
     }
-
     .member-links a {
       display: inline-block;
       margin-top: 0.5rem;
+    }
+    .alumni-table {
+      font-size: 0.9rem;
+    }
+    .alumni-table th,
+    .alumni-table td {
+      padding: 0.6rem 0.5rem;
     }
   }
 </style>
@@ -102,8 +141,7 @@
 <hr class="divider">
 
 <div class="container">
-  
-
+  <!-- Current Members Section -->
   <div class="members-container">
     {% for person in page.members %}
     <div class="member-card">
@@ -122,6 +160,114 @@
       </div>
     </div>
     {% endfor %}
+  </div>
+
+  <!-- Alumni Section -->
+  <div class="alumni-section">
+    <h2 style="color: #052049; font-size: 2rem; margin-bottom: 1rem; font-weight: 600;">Alumni</h2>
+    <hr style="border-top: 2px solid #052049; margin-bottom: 2rem;">
+    
+    <table class="alumni-table">
+      <thead>
+        <tr>
+          <th>Alumni Name</th>
+          <th>Batch</th>
+          <th>Current Organization</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="alumni-name">Arnab Moitro</td>
+          <td class="alumni-batch">Dual Degree 2014</td>
+          <td class="alumni-org">Texas A&M</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Saida Naik</td>
+          <td class="alumni-batch">Dual Degree 2015</td>
+          <td class="alumni-org">IIM Calcutta</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Ankur Gupta</td>
+          <td class="alumni-batch">Postdoc 2015</td>
+          <td class="alumni-org">Postdoc at The Hebrew University of Jerusalem, Israel</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Sandeep</td>
+          <td class="alumni-batch">Dual Degree 2016</td>
+          <td class="alumni-org">Photon Interactive</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Kushal Singh</td>
+          <td class="alumni-batch">Dual Degree 2016</td>
+          <td class="alumni-org">Venture Factory</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Sharat Embrandiri</td>
+          <td class="alumni-batch">Research Staff (JRF)</td>
+          <td class="alumni-org">GE Healthcare</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Nayan Bhatt</td>
+          <td class="alumni-batch">MS 2017</td>
+          <td class="alumni-org">Analog Devices</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Vaisakh Shankar</td>
+          <td class="alumni-batch">Dual Degree 2017</td>
+          <td class="alumni-org">ACT Fibernet</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Niranjan Chakrabhavi</td>
+          <td class="alumni-batch">Dual Degree 2017</td>
+          <td class="alumni-org">IISc (PMRF)</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Satish</td>
+          <td class="alumni-batch">MS 2018</td>
+          <td class="alumni-org">—</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Pratham Bhatt</td>
+          <td class="alumni-batch">Dual Degree 2018</td>
+          <td class="alumni-org">Honeywell</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Niraj</td>
+          <td class="alumni-batch">Dual Degree 2018</td>
+          <td class="alumni-org">—</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Dhanush Rachaveti</td>
+          <td class="alumni-batch">PhD 2019</td>
+          <td class="alumni-org">VIT, Chennai</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Banuvathy Rajakumar</td>
+          <td class="alumni-batch">PhD 2022</td>
+          <td class="alumni-org">—</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Ann David</td>
+          <td class="alumni-batch">PhD 2022</td>
+          <td class="alumni-org">Thryv Rehab Solutions</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Prajwal Shenoy</td>
+          <td class="alumni-batch">PhD 2024</td>
+          <td class="alumni-org">Manipal Institute of Technology</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">Rakhi Agarwal</td>
+          <td class="alumni-batch">PhD 2024</td>
+          <td class="alumni-org">—</td>
+        </tr>
+        <tr>
+          <td class="alumni-name">B. Eswari</td>
+          <td class="alumni-batch">PhD 2025</td>
+          <td class="alumni-org">Post-Doc, IIT Madras</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
