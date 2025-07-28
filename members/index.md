@@ -80,6 +80,13 @@ members:
       Diwakar completed his Bachelor's degree in Electronics and Communication Engineering from NIT Calicut, followed by a Master's in Bioengineering from CMC Vellore, affiliated with SCTIMST. He is deeply interested in understanding the research process and aims to develop strong expertise in technical areas, particularly embedded systems, instrumentation, and signal processing. He also enjoys spending time in silence and reflection.
       
     image: /static/img/members/members/diwakar.jpg
+
+  - name: Aniket Sahoo
+    role: MS Scholar
+    bio: >
+      Aniket Sahoo is currently pursuing an M.S. by Research in Biomedical Engineering. He holds a Bachelor's degree in Mechatronics from SRM Institute of Science and Technology. His interests lie in neurorehabilitation and biomedical instrumentation, with a focus on developing sensor-based systems and exploring their applications in healthcare and rehabilitation.
+      
+    image: /static/img/members/members/aniket.jpeg
 ---
 
 
