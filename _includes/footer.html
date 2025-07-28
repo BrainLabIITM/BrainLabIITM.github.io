@@ -1,15 +1,63 @@
-    </div>
+</div>
     <hr>
     <div id="footer footer-fixed-bottom">
       <div class="container">
         <p class="text-muted credit"> This website is open-source and available on <a href="https://github.com/BRAINLabIITM/BrainLabIITM.github.io" target="_blank">GitHub</a>.</p>
       </div>
     </div>
-
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/popper.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script src="/static/js/parallax.min.js"></script>
+    
+    <!-- Alumni Carousel Script -->
+    <script>
+    $(document).ready(function() {
+        if ($('#testimonials-carousel').length) {
+            const $carousel = $('#testimonials-carousel');
+            const $items = $carousel.find('.carousel-item');
+            const $prevBtn = $carousel.find('.prev');
+            const $nextBtn = $carousel.find('.next');
+            let currentIndex = 0;
+
+            // Find the initially active item
+            $items.each(function(index) {
+                if ($(this).hasClass('active')) {
+                    currentIndex = index;
+                }
+            });
+
+            function showItem(index) {
+                $items.removeClass('active');
+                $items.eq(index).addClass('active');
+            }
+
+            function nextItem() {
+                currentIndex = (currentIndex + 1) % $items.length;
+                showItem(currentIndex);
+            }
+
+            function prevItem() {
+                currentIndex = (currentIndex - 1 + $items.length) % $items.length;
+                showItem(currentIndex);
+            }
+
+            // Event listeners
+            $nextBtn.on('click', function(e) {
+                e.preventDefault();
+                nextItem();
+            });
+
+            $prevBtn.on('click', function(e) {
+                e.preventDefault();
+                prevItem();
+            });
+
+           
+            setInterval(nextItem, 3000);
+        }
+    });
+    </script>
   </body>
 </html>

@@ -1,5 +1,16 @@
 {% include header.html %}
-
-{{content}}
-
+{% if page.sidebar %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-md-7">
+      {{ content }}
+    </div>
+    {% if page.sidebar == "alumni" %}
+      {% include alumni_carousel.html %}
+    {% endif %}
+  </div>
+</div>
+{% else %}
+{{ content }}
+{% endif %}
 {% include footer.html %}
